@@ -28,7 +28,7 @@ $.fn.accordion = function(options){
         return {
           //20200317
           _clearAccordions : function(){
-            accordions.each(setting._toggleClose).on();
+            accordions.each(setting._toggleClose).on().off();
           },
           //20200317
           //表示・非表示演算
